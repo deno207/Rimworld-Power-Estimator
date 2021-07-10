@@ -2,15 +2,9 @@ package com.github.deno207.rimworld.power.estimator.data;
 
 public class Consumer {
 
-    private final String name;
-    private final int powerConsumed;
-    private final TimePeriod consumptionPeriod;
-
-    public Consumer(String name, int powerConsumed, TimePeriod consumptionPeriod) {
-        this.name = name;
-        this.powerConsumed = powerConsumed;
-        this.consumptionPeriod = consumptionPeriod;
-    }
+    private String name;
+    private int powerConsumed;
+    private TimePeriod consumptionPeriod;
 
     public String getName() {
         return name;
@@ -22,5 +16,17 @@ public class Consumer {
 
     public TimePeriod getConsumptionPeriod() {
         return consumptionPeriod;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPowerConsumed(int powerConsumed) {
+        this.powerConsumed = powerConsumed;
+    }
+
+    public void setConsumptionPeriod(TimePeriod consumptionPeriod) {
+        this.consumptionPeriod = consumptionPeriod;
     }
 }

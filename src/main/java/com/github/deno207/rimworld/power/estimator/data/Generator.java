@@ -2,15 +2,9 @@ package com.github.deno207.rimworld.power.estimator.data;
 
 public class Generator {
 
-    private final String name;
-    private final int powerGenerated;
-    private final TimePeriod generatorPeriod;
-
-     public Generator(String name, int powerGenerated, TimePeriod generatorPeriod) {
-         this.name = name;
-         this.powerGenerated = powerGenerated;
-         this.generatorPeriod = generatorPeriod;
-     }
+    private String name;
+    private int powerGenerated;
+    private TimePeriod generatorPeriod;
 
     public String getName() {
         return name;
@@ -22,5 +16,17 @@ public class Generator {
 
     public TimePeriod getGeneratorPeriod() {
         return generatorPeriod;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPowerGenerated(int powerGenerated) {
+        this.powerGenerated = powerGenerated;
+    }
+
+    public void setGeneratorPeriod(TimePeriod generatorPeriod) {
+        this.generatorPeriod = generatorPeriod;
     }
 }

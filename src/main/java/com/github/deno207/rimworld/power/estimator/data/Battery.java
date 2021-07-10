@@ -2,15 +2,9 @@ package com.github.deno207.rimworld.power.estimator.data;
 
 public class Battery {
 
-    private final String name;
-    private final int storageCapacity;
-    private final float efficiency;
-
-    public Battery(String name, int storageCapacity, float efficiency) {
-        this.name = name;
-        this.storageCapacity = storageCapacity;
-        this.efficiency = efficiency;
-    }
+    private String name;
+    private int storageCapacity;
+    private float efficiency;
 
     public String getName() {
         return name;
@@ -22,5 +16,17 @@ public class Battery {
 
     public float getEfficiency() {
         return efficiency;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setStorageCapacity(int storageCapacity) {
+        this.storageCapacity = storageCapacity;
+    }
+
+    public void setEfficiency(float efficiency) {
+        this.efficiency = efficiency;
     }
 }
