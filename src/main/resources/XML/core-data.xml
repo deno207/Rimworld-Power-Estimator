@@ -198,7 +198,7 @@
         <battery>
             <name>Battery</name>
             <charge>600</charge>
-            <efficentcy>0.5</efficentcy>
+            <efficiency>0.5</efficiency>
         </battery>
     </batteries>
 </building-data>
