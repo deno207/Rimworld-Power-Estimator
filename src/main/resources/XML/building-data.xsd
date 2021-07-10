@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="com.github.deno207"
+           xmlns="com.github.deno207"
+           elementFormDefault="qualified">
+
+    <xs:element name="building-data">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="generators">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="generator" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="power-generated" type="positive-integer"/>
+                                        <xs:element name="generation-period" type="time-period-enum"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="consumers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="consumer" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="power-draw" type="positive-integer"/>
+                                        <xs:element name="draw-period" type="time-period-enum"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="batteries">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="battery" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="charge" type="positive-integer"/>
+                                        <xs:element name="efficiency" type="positive-decimal"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="positive-integer">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="time-period-enum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ALWAYS"/>
+            <xs:enumeration value="DAY_TIME"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="positive-decimal">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,197 +1,200 @@
 <?xml version = "1.0"?>
-<building-data>
+<building-data
+        xmlns="com.github.deno207"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="com.github.deno207 building-data.xsd">
     <generators>
         <generator>
             <name>Wood-fired generator</name>
-            <power-generatred>1000</power-generatred>
-            <generation-time>ALWAYS</generation-time>
+            <power-generated>1000</power-generated>
+            <generation-period>ALWAYS</generation-period>
         </generator>
         <generator>
             <name>Chemfuel powered generator</name>
-            <power-generatred>1000</power-generatred>
-            <generation-time>ALWAYS</generation-time>
+            <power-generated>1000</power-generated>
+            <generation-period>ALWAYS</generation-period>
         </generator>
         <generator>
             <name>Watermill generator</name>
-            <power-generatred>1100</power-generatred>
-            <generation-time>ALWAYS</generation-time>
+            <power-generated>1100</power-generated>
+            <generation-period>ALWAYS</generation-period>
         </generator>
         <generator>
             <name>Geothermal generator</name>
-            <power-generatred>3600</power-generatred>
-            <generation-time>ALWAYS</generation-time>
+            <power-generated>3600</power-generated>
+            <generation-period>ALWAYS</generation-period>
         </generator>
         <generator>
             <name>Solar generator</name>
-            <power-generatred>1700</power-generatred>
-            <generation-time>DAY_TIME</generation-time>
+            <power-generated>1700</power-generated>
+            <generation-period>DAY_TIME</generation-period>
         </generator>
         <generator>
             <name>Vanometric power cell</name>
-            <power-generatred>1000</power-generatred>
-            <generation-time>ALWAYS</generation-time>
+            <power-generated>1000</power-generated>
+            <generation-period>ALWAYS</generation-period>
         </generator>
         <generator>
             <name>Unstable power cell</name>
-            <power-generatred>400</power-generatred>
-            <generation-time>ALWAYS</generation-time>
+            <power-generated>400</power-generated>
+            <generation-period>ALWAYS</generation-period>
         </generator>
     </generators>
     <consumers>
         <consumer>
             <name>Deep drill</name>
             <power-draw>200</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Biofuel refinery</name>
             <power-draw>170</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Electric crematorium</name>
             <power-draw>250</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Electric smelter</name>
             <power-draw>700</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Electric smithy</name>
             <power-draw>210</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Electric stove</name>
             <power-draw>350</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Electric tailor bench</name>
             <power-draw>120</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Fabrication bench</name>
             <power-draw>250</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Fabrication bench</name>
             <power-draw>250</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Hi-tech research bench</name>
             <power-draw>250</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Hydroponics basin</name>
             <power-draw>70</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Machining table</name>
             <power-draw>350</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Nutrient paste dispenser</name>
             <power-draw>200</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Standing lamp</name>
             <power-draw>30</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Cooler</name>
             <power-draw>200</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Cooler</name>
             <power-draw>200</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Heater</name>
             <power-draw>175</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Sun lamp</name>
             <power-draw>2900</power-draw>
-            <draw-time>DAY_TIME</draw-time>
+            <draw-period>DAY_TIME</draw-period>
         </consumer>
         <consumer>
             <name>Tube television</name>
             <power-draw>200</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Flatscreen television</name>
             <power-draw>150</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Megascreen television</name>
             <power-draw>450</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Autocannon turret</name>
             <power-draw>150</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Mini-turret</name>
             <power-draw>80</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Uranium slug turret</name>
             <power-draw>150</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Comms console</name>
             <power-draw>200</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Ground-penetrating scanner</name>
             <power-draw>700</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Long-range mineral scanner</name>
             <power-draw>700</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Moisture pump</name>
             <power-draw>150</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Multi-analyzer</name>
             <power-draw>200</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Orbital trade beacon</name>
             <power-draw>40</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
             <name>Vitals monitor</name>
             <power-draw>80</power-draw>
-            <draw-time>ALWAYS</draw-time>
+            <draw-period>ALWAYS</draw-period>
         </consumer>
     </consumers>
     <batteries>
