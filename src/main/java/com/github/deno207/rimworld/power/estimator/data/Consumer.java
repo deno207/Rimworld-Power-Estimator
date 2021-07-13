@@ -1,5 +1,7 @@
 package com.github.deno207.rimworld.power.estimator.data;
 
+import java.util.Objects;
+
 public class Consumer {
 
     private String name;
@@ -28,5 +30,24 @@ public class Consumer {
 
     public void setConsumptionPeriod(TimePeriod consumptionPeriod) {
         this.consumptionPeriod = consumptionPeriod;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        Consumer consumer = (Consumer) o;
+        return Objects.equals(name, consumer.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 }
