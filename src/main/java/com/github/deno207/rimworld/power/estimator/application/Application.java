@@ -2,6 +2,7 @@ package com.github.deno207.rimworld.power.estimator.application;
 
 import com.github.deno207.rimworld.power.estimator.data.BuildingManager;
 import com.github.deno207.rimworld.power.estimator.parser.BuildingDataHandler;
+import com.github.deno207.rimworld.power.estimator.parser.DataReader;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -24,15 +25,8 @@ public class Application {
     }
 
     public void run() {
-        try {
-            SAXParserFactory parserFactory = SAXParserFactory.newInstance();
-            SAXParser parser = parserFactory.newSAXParser();
-            BuildingDataHandler dataHandler = new BuildingDataHandler(buildingManager);
-            InputStream coreDataStream = getClass().getResourceAsStream("/XML/core-data.xml");
-            parser.parse(coreDataStream, dataHandler);
-        } catch (IOException | ParserConfigurationException | SAXException e) {
-            e.printStackTrace();
-        }
+        DataReader reader = new DataReader(buildingManager);
+        reader.readData();
 
         System.out.println(buildingManager);
     }
