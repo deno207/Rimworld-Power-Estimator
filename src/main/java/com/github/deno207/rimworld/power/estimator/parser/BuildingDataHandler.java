@@ -96,7 +96,7 @@ public class BuildingDataHandler extends DefaultHandler {
 
     @Override
     public void characters(char[] characters, int start, int length) {
-        String value = String.valueOf(characters);
+        String value = String.valueOf(characters, start, length);
 
         if (nameTag && generatorTag) {
             generator.setName(value);
