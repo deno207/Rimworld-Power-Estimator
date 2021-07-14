@@ -34,4 +34,26 @@ public class BuildingManager {
         }
         consumers.add(consumer);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("<buildings>\n<generators>\n");
+        for (Generator generator: generators) {
+            builder.append(generator);
+            builder.append("\n");
+        }
+        builder.append("</generators>\n<consumers>\n");
+        for (Consumer consumer : consumers) {
+            builder.append(consumer);
+            builder.append("\n");
+        }
+        builder.append("</consumers>\n<batteries>\n");
+        for (Battery battery : batteries) {
+            builder.append(battery);
+            builder.append("\n");
+        }
+        builder.append("</batteries>\n</buildings>");
+        return builder.toString();
+    }
 }

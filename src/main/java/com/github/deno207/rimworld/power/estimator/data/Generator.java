@@ -50,4 +50,10 @@ public class Generator {
     public int hashCode() {
         return Objects.hash(name);
     }
+
+    @Override
+    public String toString() {
+        return "<generator>\n<name>" + name + "</name>\n<power-generated>" + powerGenerated + "</power-generated>\n" +
+                "<generation-period>" + generatorPeriod + "</generation-period>\n</generator>";
+    }
 }

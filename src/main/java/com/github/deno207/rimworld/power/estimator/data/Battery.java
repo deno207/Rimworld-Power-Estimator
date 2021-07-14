@@ -50,4 +50,10 @@ public class Battery {
     public int hashCode() {
         return Objects.hash(name);
     }
+
+    @Override
+    public String toString() {
+        return "<batteries>\n<name>" + name + "</name>\n<storage-capacity>" + storageCapacity + "</storage-capacity>\n"
+                + "<efficiency>" + efficiency + "</efficiency>\n</batteries>";
+    }
 }

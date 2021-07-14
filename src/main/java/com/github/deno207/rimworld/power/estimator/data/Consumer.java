@@ -50,4 +50,10 @@ public class Consumer {
     public int hashCode() {
         return Objects.hash(name);
     }
+
+    @Override
+    public String toString() {
+        return "<consumer>\n<name>" + name + "</name>\n<power-draw>" + powerConsumed + "</power-draw>\n" +
+                "<consumption-period>" + consumptionPeriod + "</consumption-period>\n</consumer>";
+    }
 }
