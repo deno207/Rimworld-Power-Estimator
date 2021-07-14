@@ -38,3 +38,6 @@ hs_err_pid*
 
 # Intellij config files
 .idea
+
+# custom xml data files
+*.xml
