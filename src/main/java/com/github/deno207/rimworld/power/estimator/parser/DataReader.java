@@ -8,7 +8,6 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -61,12 +60,14 @@ public class DataReader {
         try {
             if (customBuildingDataFile.createNewFile()) {
                 FileWriter fileWriter = new FileWriter(customBuildingDataFile);
-                fileWriter.write("<?xml version = \"1.0\"?>\n" +
-                        "<building-data\n" +
-                        "        xmlns=\"com.github.deno207\"\n" +
-                        "        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n" +
-                        "        xsi:schemaLocation=\"com.github.deno207 building-data.xsd\">\n" +
-                        "</building-data>\n");
+                fileWriter.write("""
+                        <?xml version = "1.0"?>
+                        <building-data
+                                xmlns="com.github.deno207"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                xsi:schemaLocation="com.github.deno207 building-data.xsd">
+                        </building-data>
+                        """);
                 fileWriter.close();
             }
         } catch (IOException e) {
