@@ -7,7 +7,7 @@
     <xs:element name="building-data">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="generators">
+                <xs:element name="generators" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="generator" maxOccurs="unbounded">
@@ -22,7 +22,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="consumers">
+                <xs:element name="consumers" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="consumer" maxOccurs="unbounded">
@@ -37,7 +37,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="batteries">
+                <xs:element name="batteries" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="battery" maxOccurs="unbounded">

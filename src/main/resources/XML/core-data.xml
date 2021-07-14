@@ -82,11 +82,6 @@
             <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
-            <name>Fabrication bench</name>
-            <power-draw>250</power-draw>
-            <draw-period>ALWAYS</draw-period>
-        </consumer>
-        <consumer>
             <name>Hi-tech research bench</name>
             <power-draw>250</power-draw>
             <draw-period>ALWAYS</draw-period>
@@ -109,11 +104,6 @@
         <consumer>
             <name>Standing lamp</name>
             <power-draw>30</power-draw>
-            <draw-period>ALWAYS</draw-period>
-        </consumer>
-        <consumer>
-            <name>Cooler</name>
-            <power-draw>200</power-draw>
             <draw-period>ALWAYS</draw-period>
         </consumer>
         <consumer>
